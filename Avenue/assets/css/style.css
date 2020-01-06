@@ -1,0 +1,163 @@
+/* variable */
+/* margin */
+/* left right */
+/* font */
+/*** text color starts ***/
+/*** text color ends ***/
+/* display */
+/* media */
+/*Fonts*/
+/*** 
+=================================================================
+Base CSS for this theme.
+Basic style for this theme exists in this file.
+=================================================================
+***/
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+/* variable */
+/* margin */
+/* left right */
+/* font */
+/*** text color starts ***/
+/*** text color ends ***/
+/* display */
+/* media */
+/*Fonts*/
+html {
+  font-family: sans-serif;
+  font-size: 1vw;
+  line-height: 2;
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: #8e8c8c;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  color: #575153;
+}
+
+.container-fluid {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+.row {
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem;
+}
+
+.container {
+  max-width: 80vw;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+.sm-container {
+  max-width: 60vw;
+  margin: 0 auto;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+.light-grey {
+  color: #8e8c8c;
+}
+
+.dark-grey {
+  color: #575153;
+}
+
+.bg-light-grey {
+  background: #575153;
+}
+
+.bg-dark-grey {
+  background: #8e8c8c;
+}
+
+/*** 
+=====================================================================
+Footer CSS for this theme.
+All the footer related styles exists in this file.
+=====================================================================
+***/
+.brand_wrapper {
+  width: 75%;
+  margin: auto;
+  position: relative;
+}
+
+.brand_wrapper .col-sm {
+  position: absolute;
+  width: 50%;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  text-align: justify;
+  font-size: 0.714rem;
+}
+
+.col-02 {
+  right: 0%;
+}
+
+.col-03 {
+  top: 60vh;
+}
+
+.col-04 {
+  right: 0%;
+  top: 25vh;
+}
+
+.col-05 {
+  right: 0%;
+  top: 82vh;
+}
+
+.col-06 {
+  top: 118vh;
+}
+
+.col-07 {
+  right: 0%;
+  top: 118vh;
+  display: flex;
+}
+
+.col-07 img {
+  width: 35%;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+.brand_wrapper{
+    width: 75%;
+    margin: auto;
+    position: relative;
+}
+.brand_wrapper 
+    .col-sm 
+        {
+            position: absolute;
+            width: 50%;
+        }
+        img{
+            width: 100%;
+        }
+        p{
+            text-align: justify;
+            font-size: $n10;
+        }
+        .col-02{
+            right: 0%;
+        }
+        .col-03{
+            top: 60vh;
+        }
+        .col-04{
+            right: 0%;
+            top: 25vh;
+        }
+        .col-05{
+            right: 0%;
+            top: 82vh;
+        }
+        .col-06{
+            top: 118vh;
+        }
+        .col-07
+            {
+                right: 0%;
+                top: 118vh;
+                display: flex;
+            }
+        .col-07 img{
+                width: 35%;
+            }

@@ -1,0 +1,87 @@
+/*** 
+=================================================================
+Base CSS for this theme.
+Basic style for this theme exists in this file.
+=================================================================
+***/
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import "mixin";
+@import "variables";
+
+html {
+  font-family: $font-base;
+  font-size: 1vw;
+  line-height: 2;
+
+  @include tabletmax {
+    font-size: 14px;
+  }
+}
+
+body {
+  font-family: $page-font;
+  font-size: 1rem;
+  font-weight: normal;
+  color: $base-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  color: $heading-color;
+}
+
+.container-fluid {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+.row {
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem;
+}
+
+.container {
+  max-width: 80vw;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+.sm-container {
+  max-width: 60vw;
+  margin: 0 auto;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+}
+
+.light-grey {
+  color: $base-color;
+}
+
+.dark-grey {
+  color: $heading-color;
+}
+
+.bg-light-grey {
+  background: $heading-color;
+}
+
+.bg-dark-grey {
+  background: $base-color;
+}

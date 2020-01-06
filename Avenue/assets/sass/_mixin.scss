@@ -1,0 +1,105 @@
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin box-shadow($boxs) {
+	-webkit-box-shadow: $boxs;
+	-moz-box-shadow: $boxs;
+	-ms-box-shadow: $boxs;
+	box-shadow: $boxs;
+}
+
+@mixin transition($trans) {
+	-webkit-transition: $trans;
+	-moz-transition: $trans;
+	-ms-transition: $trans;
+	transition: $trans;
+}
+
+@mixin transform($trans) {
+	-webkit-transform: $trans;
+	-moz-transform: $trans;
+	-ms-transform: $trans;
+	transform: $trans;
+}
+
+@mixin transition-duration($transdur) {
+	-webkit-transition-duration: $transdur;
+	-moz-transition-duration: $transdur;
+	-ms-transition-duration: $transdur;
+	transition-duration: $transdur;
+}
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content
+	}
+	&:-moz-placeholder {
+		@content
+	}
+	&::-moz-placeholder {
+		@content
+	}
+	&:-ms-input-placeholder {
+		@content
+	}
+}
+
+@mixin rotate($degrees) {
+	-webkit-transform: rotate($degrees);
+	-moz-transform: rotate($degrees);
+	-ms-transform: rotate($degrees);
+	-o-transform: rotate($degrees);
+	transform: rotate($degrees);
+}
+
+$desktop-width: 1200px;
+$tablet-landscape-width: 1024px;
+$tablet-min-width: 768px;
+$medium-device-min-width: 992px;
+$tablet-max-width: 991px;
+$mobile-max-width: 767px;
+@mixin desktop {
+	@media (min-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
+@mixin tablettoggle {
+	@media (max-width: #{$tablet-max-width}) and (min-width: #{$tablet-min-width}) {
+		@content;
+	}
+}
+
+@mixin tabletpro {
+	@media (max-width: #{$tablet-landscape-width}) {
+		@content;
+	}
+}
+
+@mixin tabletmin {
+	@media (min-width: #{$medium-device-min-width}) {
+		@content;
+	}
+}
+
+@mixin smalltabletmin {
+	@media (min-width: #{$tablet-min-width}) {
+		@content;
+	}
+}
+
+@mixin tabletmax {
+	@media (max-width: #{$tablet-max-width}) {
+		@content;
+	}
+}
+
+@mixin mobilemax {
+	@media (max-width: #{$mobile-max-width}) {
+		@content;
+	}
+}
